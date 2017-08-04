@@ -1,2 +1,2 @@
-# JpriseComponentLibrary
+# RpISE-ComponentLibrary
 Java reusable Components.
