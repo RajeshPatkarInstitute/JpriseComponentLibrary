@@ -1,25 +1,24 @@
 package com.rajeshpatkar.components.miscellaneous;
-class PiggyBank{
-    private String name="tom";
-    private int balance=100;
-    private int lt=100;
-    PiggyBank(){
-        name = "Ravi";
+public class PiggyBank{
+    private String name="";
+    private int balance;
+    private int lt;
+    public PiggyBank(){
     }
-    PiggyBank(String name,int amount){
+    public PiggyBank(String name,int amount){
         this.name = name;
         this.balance = amount;
         lt = amount;
     }
-    PiggyBank(String name){
+    public PiggyBank(String name){
         this(name,300);
     }
-    void deposit(int v) {
+    public void deposit(int v) {
         balance = balance + v;
         lt = v;
     }
 
-    void withdraw(int v) {
+    public void withdraw(int v) {
         if (balance >= v) {
             balance = balance - v;
             lt = -v;
@@ -28,7 +27,7 @@ class PiggyBank{
         }
     }
 
-    void statement() {
+    public void statement() {
         System.out.println("Acount Name "+name);
         System.out.println("Balance = " + balance
                 + "\n" + "Last Transaction = " + lt);
